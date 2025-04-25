@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -28,6 +29,31 @@ body {
 }
 
 .menu button:hover {
+    background-color: #555;
+}
+
+.menu2 {
+    display: flex;
+    justify-content: center; /* Center the menu items horizontally */
+    background-color: #333;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1000;
+    width: 100%; /* Full width */
+}
+
+.menu2 button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.menu2 button:hover {
     background-color: #555;
 }
 
@@ -82,6 +108,16 @@ h1 {
     h1 {
         font-size: 1.5rem;
     }
+     .menu2 {
+        flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+        justify-content: center; /* Ensure buttons stay centered */
+        padding: 10px;
+    }
+
+    .menu2 button {
+        margin: 5px; /* Add spacing between buttons */
+        font-size: 0.9rem; /* Adjust button size for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -92,5 +128,9 @@ h1 {
 
     h1 {
         font-size: 1.2rem;
+    }
+     .menu2 button {
+        font-size: 0.8rem; /* Further reduce button size for very small screens */
+        padding: 8px 15px;
     }
 }
