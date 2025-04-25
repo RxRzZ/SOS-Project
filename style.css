@@ -98,17 +98,21 @@ footer {
     }
 
     .button-section {
-        flex: 1 1 100%; /* Each button takes full width */
-        max-width: none;
+        margin: 10px 0; /* Add spacing between stacked items */
     }
 
-    .menu button {
-        font-size: 0.9rem; /* Adjust button size for smaller screens */
-        padding: 8px 15px;
+    .sos-image img {
+        width: 90%; /* Scale the image for smaller screens */
+        max-width: 300px; /* Limit the maximum size */
     }
 
     h1 {
         font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button size */
+        padding: 10px 20px;
     }
 }
 
