@@ -1,11 +1,18 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
 .menu {
     display: flex;
     justify-content: center;
     background-color: #333;
-    padding: 10px 0 10px;
-    position: fixed;
+    padding: 10px 0;
+    position: sticky;
     top: 0;
-    width: 100%;
     z-index: 1000;
 }
 
@@ -24,98 +31,14 @@
     background-color: #555;
 }
 
-body {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh;
-    background-color: lightgray;
-}
-
 h1 {
     font-size: 2rem;
-    color: black; /* Match the color of h2 for consistency */
-    background-color: lightblue;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-
-
-
-button {
-    color: white;
-    font-size: 1.5rem;
-    padding: 15px 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-color: black;
-}
-
-button:hover {
-    background-color: #f0f0f0;
-    color: black;
-    border: 1px solid #333;
-    transform: scale(1.25);
-}
-
-.section-one {
-    background-color: rgb(245, 255, 255); /* Background color for the first section */
     text-align: center;
-    position: sticky;
-    top: 25px;
-    z-index: 10; /* Ensure it stays above other elements */
-    padding: 0px 700px 0 700px; /* Add padding for spacing */
-    margin-bottom: 100px;
+    margin: 20px 0;
+    color: #333;
 }
 
-.sos-image {
-    text-align: center;
-}
-
-.sos-image img {
-    width: 500px; /* Adjust the size of the SOS image */
-    margin-bottom: 0px; /* Add spacing between the image and buttons */
-    margin-top: 10px;
-    transform: scale(1);
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-right: 60px;
-    padding-left: 10px;
-    margin: 0% 0px 10%; /* Center the container */
-    gap: 400px; /* Space between the buttons */
-}
-
-.button-section {
-    text-align: center;
-    margin: 0 200px;
-}
-
-.image-container img {
-    display: block;
-    margin: 0px 0px 10px; /* Center the image and add spacing */
-    width: 150px; /* Adjust the size of the image */
-}
-
-
-footer {
-    font-size: large;
-    background-color: white;
-    position: relative;
-    text-align: center;
-    width: 125%;
-    color: rgb(0, 0, 0);
-}
-
+/* SOS Image Section */
 .sos-image img {
     width: 100%; /* Make the image responsive */
     max-width: 500px; /* Limit the maximum width */
