@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    z-index: 1000;
+}
+
+.menu button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #555;
+}
+
+.menu2 {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu2 button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.menu2 button:hover {
+    background-color: #555;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Two Columns Section */
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 20px;
+    /* Add spacing below the menus */
+}
+
+.column {
+    width: 100%;
+    /* Each column takes 45% of the width */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: x-large;
+    border-bottom: #007BFF 2px solid; /* Add a line below the <h3> */
+    padding-bottom: 10px; /* Add spacing between the text and the line */
+}
+
+.column p{
+    margin: 5px 0;
+    text-align: center;
+    font-size: x-large;
+    border-bottom: 1px solid #ddd; /* Add a line below each <p> */
+    padding-bottom: 10px; /* Add spacing between the text and the line */
+}
+
+.column a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+.column p:last-child {
+    border-bottom: none; /* Remove the line from the last <p> */
+}
