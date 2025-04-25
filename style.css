@@ -115,3 +115,91 @@ footer {
     width: 125%;
     color: rgb(0, 0, 0);
 }
+
+.sos-image img {
+    width: 100%; /* Make the image responsive */
+    max-width: 500px; /* Limit the maximum width */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Two Columns Section */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px;
+    padding: 20px;
+}
+
+.button-section {
+    text-align: center;
+    flex: 1 1 calc(50% - 20px); /* Each button takes 50% of the width minus the gap */
+    max-width: 300px; /* Limit the maximum width */
+}
+
+.button-section img {
+    width: 100%;
+    max-width: 150px; /* Limit the brain image size */
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .button-section {
+        flex: 1 1 100%; /* Each button takes full width */
+        max-width: none;
+    }
+
+    .menu button {
+        font-size: 0.9rem; /* Adjust button size for smaller screens */
+        padding: 8px 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu button {
+        font-size: 0.8rem; /* Further adjust button size for very small screens */
+        padding: 5px 10px;
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Adjust heading size for very small screens */
+    }
+
+    .button-section img {
+        max-width: 100px; /* Reduce brain image size */
+    }
+}
